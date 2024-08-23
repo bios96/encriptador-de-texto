@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="icon" href="Imagenes/Favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img id="corner-image" src="/Imagenes/Logo.jpg" alt="Logo Candado">
+    <div class="container">
+        <div class="text-section">
+            <textarea id="input-text" placeholder="Ingresa el texto aquí..."></textarea>
+            <div class="buttons">
+                <button id="encrypt-btn">Encriptar</button>
+                <button id="decrypt-btn">Desencriptar</button>
+            </div>
+        </div>
+        <div class="text-section">
+            <div id="output-container">
+                <textarea id="output-text" readonly></textarea>
+                <div id="placeholder-content">
+                    <img id="placeholder-image" src="Imagenes/Muñeco.png" alt="Imagen de texto no encontrado">
+                    <p id="placeholder-message">Ningún mensaje fue encontrado</p>
+                    <p id="placeholder-submessage">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+            <button id="copy-btn" style="display: none;">Copiar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
